@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+html {
+  --default-font-family: 'Noto Sans', sans-serif;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 80%;
+  }
+}

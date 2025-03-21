@@ -1,0 +1,177 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "submit": "Submit",
+    "clear": "Clear"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "confirmPassword": "Confirm Password"
+  },
+  "quiz": {
+    "create": "Create Quiz",
+    "title": "Title",
+    "description": "Description",
+    "questions": "Questions",
+    "addQuestion": "Add Question",
+    "startQuiz": "Start Quiz",
+    "submitQuiz": "Submit Quiz",
+    "results": "Results",
+    "score": "Score",
+    "createNew": "Create New Quiz",
+    "editQuiz": "Edit Quiz",
+    "enterTitle": "Enter quiz title",
+    "enterDescription": "Enter quiz description",
+    "category": "Category",
+    "enterCategory": "Enter quiz category",
+    "makePublic": "Make this quiz public",
+    "creating": "Creating...",
+    "updating": "Updating...",
+    "update": "Update",
+    "createdSuccess": "Quiz created successfully",
+    "createdError": "Failed to create quiz",
+    "question": {
+      "text": "Question",
+      "enterQuestion": "Enter your question",
+      "difficulty": "Difficulty",
+      "option": "Option {{number}}",
+      "addingQuestion": "Adding Question...",
+      "markCorrect": "Please mark at least one answer as correct",
+      "fillAllOptions": "Please fill in all answer options",
+      "addFailed": "Failed to add question",
+      "levels": {
+        "easy": "Easy",
+        "medium": "Medium",
+        "hard": "Hard"
+      }
+    }
+  },
+  "home": {
+    "welcome": "Welcome to QuizMaster",
+    "subtitle": "Create, share, and master knowledge through interactive quizzes. Join our community of learners and educators today!",
+    "buttons": {
+      "getStarted": "Get Started",
+      "signIn": "Sign In",
+      "goToDashboard": "Go to Dashboard",
+      "createAccount": "Create Your Free Account"
+    },
+    "features": {
+      "title": "Features",
+      "createQuizzes": {
+        "title": "Create Quizzes",
+        "description": "Design engaging quizzes with our intuitive quiz builder. Add questions, set time limits, and customize scoring."
+      },
+      "shareKnowledge": {
+        "title": "Share Knowledge",
+        "description": "Share your quizzes with friends, students, or colleagues. Track progress and analyze results."
+      },
+      "trackProgress": {
+        "title": "Track Progress",
+        "description": "Monitor performance with detailed analytics. Identify areas for improvement and celebrate success."
+      }
+    },
+    "stats": {
+      "activeUsers": "Active Users",
+      "quizzesCreated": "Quizzes Created",
+      "questionsAsked": "Questions Asked",
+      "satisfactionRate": "Satisfaction Rate"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "steps": {
+        "create": {
+          "title": "Create Your Quiz",
+          "description": "Design your quiz with our easy-to-use builder. Add questions, set time limits, and customize scoring options."
+        },
+        "share": {
+          "title": "Share with Others",
+          "description": "Invite participants via email or share a link. Perfect for classrooms, training, or friendly competitions."
+        },
+        "track": {
+          "title": "Track Results",
+          "description": "Get detailed insights into performance. View statistics, analyze answers, and track improvement over time."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "What Our Users Say",
+      "users": {
+        "teacher": {
+          "text": "QuizMaster has transformed how I assess my students. The analytics help me identify areas where they need more support.",
+          "name": "Sarah Johnson",
+          "role": "High School Teacher"
+        },
+        "trainer": {
+          "text": "The platform is incredibly user-friendly. Creating quizzes is a breeze, and the results are easy to interpret.",
+          "name": "Mark Thompson",
+          "role": "Corporate Trainer"
+        },
+        "enthusiast": {
+          "text": "I use QuizMaster to create fun trivia nights for my friends. The variety of question types keeps everyone engaged!",
+          "name": "Emily Chen",
+          "role": "Quiz Enthusiast"
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": {
+        "free": {
+          "question": "Is QuizMaster free to use?",
+          "answer": "Yes! QuizMaster offers a generous free tier with all essential features. Premium features are available for power users."
+        },
+        "export": {
+          "question": "Can I export quiz results?",
+          "answer": "Absolutely! You can export results in various formats including PDF and CSV for further analysis."
+        },
+        "participants": {
+          "question": "How many participants can take a quiz?",
+          "answer": "There's no limit! Our platform is designed to handle unlimited participants for each quiz."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join thousands of educators and learners who are already using QuizMaster to make learning more engaging and effective."
+    },
+    "footer": {
+      "about": "Making learning interactive and engaging through powerful quiz creation tools.",
+      "features": {
+        "title": "Features",
+        "items": ["Quiz Creation", "Analytics", "Collaboration", "Custom Branding"]
+      },
+      "resources": {
+        "title": "Resources",
+        "items": ["Documentation", "API Reference", "Blog", "Support"]
+      },
+      "legal": {
+        "title": "Legal",
+        "items": ["Privacy Policy", "Terms of Service", "Cookie Policy", "GDPR"]
+      },
+      "copyright": "© 2024 QuizMaster. All rights reserved."
+    }
+  },
+  "profile": {
+    "personalInfo": "Personal Information",
+    "security": "Security",
+    "changeEmail": "Change Email",
+    "changePassword": "Change Password"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "quizzes": "Quizzes"
+  }
+}

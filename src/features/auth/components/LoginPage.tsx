@@ -7,6 +7,7 @@ import { setUser } from '@/redux/auth.slice';
 import { useDispatch } from 'react-redux';
 import { fetchProfile } from '@/redux/profile.slice';
 import { AppDispatch } from '@/redux/store';
+import { ROUTES } from '@/routes/route.constants';
 
 const LoginPage = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -38,7 +39,7 @@ const LoginPage = () => {
       } else if (data) {
         dispatch(setUser(data));
         dispatch(fetchProfile());
-        navigate('/dashboard');
+        navigate(ROUTES.QUIZ.LIST);
       } else {
         setError('An unexpected error occurred. Please try again.');
       }
@@ -58,7 +59,10 @@ const LoginPage = () => {
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             Or{' '}
-            <a href="/register" className="font-medium text-blue-600 hover:text-blue-500">
+            <a
+              href="/register"
+              className="font-medium text-blue-600 hover:text-blue-500"
+            >
               create a new account
             </a>
           </p>
@@ -75,7 +79,12 @@ const LoginPage = () => {
               onChange={handleInputChange}
               required
               leftIcon={
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -95,7 +104,12 @@ const LoginPage = () => {
               onChange={handleInputChange}
               required
               leftIcon={
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -113,7 +127,11 @@ const LoginPage = () => {
             </div>
           )}
 
-          <Button type="submit" loading={loading} disabled={!formData.email || !formData.password}>
+          <Button
+            type="submit"
+            loading={loading}
+            disabled={!formData.email || !formData.password}
+          >
             Sign in
           </Button>
           <Link to="/forget-password">Forget Password?</Link>
@@ -123,4 +141,4 @@ const LoginPage = () => {
   );
 };
 
-export { LoginPage }; 
+export { LoginPage };

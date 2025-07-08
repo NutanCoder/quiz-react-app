@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '@/redux/store';
 import { PageLoading } from './common';
 import ForbiddenPage from '@/features/error/pages/forbidden.page';
+import { ROUTES } from '@/routes/route.constants';
 
 interface ProtectedRouteProps {
   children: React.ReactNode;
@@ -10,7 +11,11 @@ interface ProtectedRouteProps {
   role?: string;
 }
 
-function ProtectedRoute({ children, requireAuth = true, role }: ProtectedRouteProps) {
+function ProtectedRoute({
+  children,
+  requireAuth = true,
+  role,
+}: ProtectedRouteProps) {
   const { profile, loading } = useSelector((state: RootState) => state.profile);
   const location = useLocation();
 
@@ -21,10 +26,10 @@ function ProtectedRoute({ children, requireAuth = true, role }: ProtectedRoutePr
   }
 
   if (role && profile && profile.role !== role) {
-    return <ForbiddenPage/>;
+    return <ForbiddenPage />;
   }
   if (!requireAuth && profile) {
-    return <Navigate to="/dashboard" replace />;
+    return <Navigate to={ROUTES.QUIZ.LIST} replace />;
   }
 
   return <>{children}</>;

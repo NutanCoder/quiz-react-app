@@ -60,7 +60,7 @@ export const quizRoutes: RouteObject[] = [
   },
   {
     path: ROUTES.QUIZ.DETAILS(':id'),
-    element: withSuspense(QuizDetailPage),
+    element: withSuspense(QuizDetailPage, 'ADMIN'),
   },
   {
     path: ROUTES.QUIZ.OVERVIEW(':id'),

@@ -1,7 +1,5 @@
 # Quiz App
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d035af06-6245-4475-ba6f-619af32427d8/deploy-status)](https://app.netlify.com/projects/quiz-nagar/deploys)
-
 A modern quiz application built with React, TypeScript, and Vite that allows users to create, take, and manage quizzes.
 
 ## Features
@@ -30,7 +28,7 @@ A modern quiz application built with React, TypeScript, and Vite that allows use
 - **Frontend Framework**: React with TypeScript
 - **Build Tool**: Vite
 - **State Management**: Redux
-- **Styling**: Tailwind CSS [[memory:2295154]]
+- **Styling**: Tailwind CSS
 - **Backend**: Supabase
 - **Routing**: React Router
 
@@ -45,7 +43,7 @@ A modern quiz application built with React, TypeScript, and Vite that allows use
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/quiz-app.git
+git clone https://github.com/NutanCoder/quiz-app.git
 cd quiz-app
 ```
 

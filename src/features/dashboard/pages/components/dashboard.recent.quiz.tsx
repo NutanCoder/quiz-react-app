@@ -1,9 +1,14 @@
 import { LinkStyled } from '@/components/common';
 import { Quiz } from '@/features/quiz';
+import { RootState } from '@/redux/store';
+import { ROUTES } from '@/routes/route.constants';
 import { BookOpen, BarChart3 } from 'lucide-react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 const RecentQuiz = ({ quizzes }: { quizzes: Quiz[] }) => {
+  const { profile } = useSelector((state: RootState) => state.profile);
+
   return (
     <div className="lg:col-span-2 bg-white rounded-lg shadow-lg p-6">
       <div className="flex items-center justify-between mb-6">
@@ -14,7 +19,11 @@ const RecentQuiz = ({ quizzes }: { quizzes: Quiz[] }) => {
         <div className="space-y-4">
           {quizzes.map((quiz) => (
             <Link
-              to={`/quizzes/${quiz.uuid}`}
+              to={
+                profile?.role == 'ADMIN'
+                  ? ROUTES.QUIZ.DETAILS(quiz.uuid)
+                  : ROUTES.QUIZ.OVERVIEW(quiz.uuid)
+              }
               key={quiz.uuid}
               className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
             >
@@ -30,7 +39,9 @@ const RecentQuiz = ({ quizzes }: { quizzes: Quiz[] }) => {
                 </div>
               </div>
               <div className="text-right">
-                <p className="text-sm font-medium text-gray-900">{quiz.attemptsCount || 0} attempts</p>
+                <p className="text-sm font-medium text-gray-900">
+                  {quiz.attemptsCount || 0} attempts
+                </p>
                 <p className="text-xs text-gray-500">
                   {new Date(quiz.created_at || '').toLocaleDateString()}
                 </p>
